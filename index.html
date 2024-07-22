@@ -140,6 +140,83 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 
 </style>
+<style>
+ 
+    .scroll-container {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 70px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    .scroll-content {
+        display: flex;
+        white-space: nowrap;
+        animation: scroll 30s linear infinite;
+    }
+    
+    .scroll-content img {
+        height: 200px;
+        margin-right: 60px;
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+</style>
+<style>
+    .main {
+        overflow: hidden; /* Hide the scrollbars */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    .scroll-container1 {
+        display: flex;
+        align-items: center;
+        width: 80vw;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    .scroll-content1{
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .scroll-content1 video {
+        width: 300px;
+        height: 200px;
+        margin-right: 20px;
+        background-color: #000;
+    }
+    
+    .navigation {
+        margin-top: 20px;
+    }
+    
+    .nav-button {
+        border: none;
+        color: white;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 50%;
+        border: solid #000 1px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+</style>
 <link rel='stylesheet' id='xoo-el-fonts-css' href='wp-content/plugins/easy-login-woocommerce/assets/css/xoo-el-fonts6770.css?ver=2.6.5' type='text/css' media='all' />
 <link rel='stylesheet' id='IonIcons-css' href='../unpkg.com/ionicons%404.5.10-0/dist/css/ionicons.min.css?ver=2.9' type='text/css' media='all' />
 <link rel='stylesheet' id='Main-css' href='wp-content/themes/pegasus/dist/css/main98a9.css?ver=2.9' type='text/css' media='all' />
@@ -920,397 +997,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
     </div>
 </section>
-<!--  -->
-<section class="relative block md:block lg:block   padding-bottom-md   text-content-light ">
 
-        
-        
-    
-    <div class="container--full">
-        <div class="container__grid container-indent-l-0 container-indent-r-0">
-                    <div class="Icon-Carousel w-full flex items-center" x-data="iconCarousel()" x-intersect.once="visible = true">
-    <div class="Icon-Carousel-container relative w-full">
-        <div class="Icon-Slider overflow-hidden flex flex-col flickity-enabled is-draggable" x-ref="carouselIconSlider" tabindex="0">
-                                                
-                                                                
-                                                                
-                                                                
-                                                                
-                                                                
-                                                                
-                                                                                                                
-                                                                                             
-                                                                
-                                                                
-                                                                
-                                        <div class="flickity-viewport" style="height: 143.047px; touch-action: pan-y;"><div class="flickity-slider" style="left: 0px; transform: translateX(-204.31%);"><div class="Icon__slide group mx-4 flex items-center" style="position: absolute; left: 0px; transform: translateX(0%);" aria-hidden="true">
-                                    <div class="Icon-Slider__img pr-16">
-                    <img class="max-w-[238px] max-h-[200px] w-auto h-auto transform transition duration-500" src="https://www.flawlessai.com/wp-content/uploads/2023/10/CNN-SM.png" alt="">
-                </div>
-                        </div><div class="Icon__slide group mx-4 flex items-center" style="position: absolute; left: 0px; transform: translateX(110.6%);" aria-hidden="true">
-                                    <div class="Icon-Slider__img pr-16">
-                    <img class="max-w-[238px] max-h-[200px] w-auto h-auto transform transition duration-500" src="https://www.flawlessai.com/wp-content/uploads/2023/08/Netflix-sm.png" alt="">
-                </div>
-                        </div><div class="Icon__slide group mx-4 flex items-center" style="position: absolute; left: 0px; transform: translateX(221.19%);" aria-hidden="true">
-                                    <div class="Icon-Slider__img pr-16">
-                    <img class="max-w-[238px] max-h-[200px] w-auto h-auto transform transition duration-500" src="https://www.flawlessai.com/wp-content/uploads/2023/10/Virgin.png" alt="">
-                </div>
-                        </div><div class="Icon__slide group mx-4 flex items-center" style="position: absolute; left: 0px; transform: translateX(331.79%);" aria-hidden="true">
-                                    <div class="Icon-Slider__img pr-16">
-                    <img class="max-w-[238px] max-h-[200px] w-auto h-auto transform transition duration-500" src="https://www.flawlessai.com/wp-content/uploads/2023/10/Lenovo-sm.png" alt="">
-                </div>
-                        </div><div class="Icon__slide group mx-4 flex items-center is-selected" style="position: absolute; left: 0px; transform: translateX(442.38%);">
-                                    <div class="Icon-Slider__img pr-16">
-                    <img class="max-w-[238px] max-h-[200px] w-auto h-auto transform transition duration-500" src="https://www.flawlessai.com/wp-content/uploads/2023/10/CRAFT-White-sm.png" alt="">
-                </div>
-                        </div><div class="Icon__slide group mx-4 flex items-center is-selected" style="position: absolute; left: 0px; transform: translateX(552.98%);">
-                                    <div class="Icon-Slider__img pr-16">
-                    <img class="max-w-[238px] max-h-[200px] w-auto h-auto transform transition duration-500" src="https://www.flawlessai.com/wp-content/uploads/2023/10/McCann-Worldgroup-sm.png" alt="">
-                </div>
-                        </div><div class="Icon__slide group mx-4 flex items-center" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(663.58%);">
-                                    <div class="Icon-Slider__img pr-16">
-                    <img class="max-w-[238px] max-h-[200px] w-auto h-auto transform transition duration-500" src="https://www.flawlessai.com/wp-content/uploads/2023/08/Lionsgate-sm.png" alt="">
-                </div>
-                        </div><div class="Icon__slide group mx-4 flex items-center" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(774.17%);">
-                                            <div class="Icon-Slider__img pr-16">
-                            <img class="max-w-[238px] max-h-[200px] w-auto h-auto transform transition duration-500" src="https://www.flawlessai.com/wp-content/uploads/2023/10/CNN-SM.png" alt="">
-                        </div>
-                        </div><div class="Icon__slide group mx-4 flex items-center" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(884.77%);">
-                                            <div class="Icon-Slider__img pr-16">
-                            <img class="max-w-[238px] max-h-[200px] w-auto h-auto transform transition duration-500" src="https://www.flawlessai.com/wp-content/uploads/2023/08/Netflix-sm.png" alt="">
-                        </div>
-                        </div><div class="Icon__slide group mx-4 flex items-center" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(995.36%);">
-                                            <div class="Icon-Slider__img pr-16">
-                            <img class="max-w-[238px] max-h-[200px] w-auto h-auto transform transition duration-500" src="https://www.flawlessai.com/wp-content/uploads/2023/10/Virgin.png" alt="">
-                        </div>
-                        </div><div class="Icon__slide group mx-4 flex items-center" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(1105.96%);">
-                                            <div class="Icon-Slider__img pr-16">
-                            <img class="max-w-[238px] max-h-[200px] w-auto h-auto transform transition duration-500" src="https://www.flawlessai.com/wp-content/uploads/2023/10/Lenovo-sm.png" alt="">
-                        </div>
-                        </div><div class="Icon__slide group mx-4 flex items-center" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(1216.56%);">
-                                            <div class="Icon-Slider__img pr-16">
-                            <img class="max-w-[238px] max-h-[200px] w-auto h-auto transform transition duration-500" src="https://www.flawlessai.com/wp-content/uploads/2023/10/CRAFT-White-sm.png" alt="">
-                        </div>
-                        </div><div class="Icon__slide group mx-4 flex items-center" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(1327.15%);">
-                                            <div class="Icon-Slider__img pr-16">
-                            <img class="max-w-[238px] max-h-[200px] w-auto h-auto transform transition duration-500" src="https://www.flawlessai.com/wp-content/uploads/2023/10/McCann-Worldgroup-sm.png" alt="">
-                        </div>
-                        </div><div class="Icon__slide group mx-4 flex items-center" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(1437.75%);">
-                                            <div class="Icon-Slider__img pr-16">
-                            <img class="max-w-[238px] max-h-[200px] w-auto h-auto transform transition duration-500" src="https://www.flawlessai.com/wp-content/uploads/2023/08/Lionsgate-sm.png" alt="">
-                        </div>
-                        </div></div></div></div>
-    </div>
-</div>
-                </div>
-    </div>
-</section>
-<!--  -->
-<!--// Content Row -->
-
-
-                            <!-- Content Row -->
-<section class="relative block md:block lg:block   padding-bottom-lg   text-content-light " >
-
-        
-        
-    
-    <div class="container--full">
-        <div class="container__grid container-indent-l-0 container-indent-r-0">
-                    <section class="Spacer relative  ">
-    <div class="h-px padding-top-md " style="border-color:black ">
-    </div>
-    <div class="">
-    </div>
-</section> 
-                    <div x-data="videoCarousel()" 
-    x-intersect.once="visible = true"
-    class="VideoCarousel flex w-full relative overflow-hidden"
-    :class="visible ? 'component-visible' : ''">
-
-    <div class="VideoCarousel__Inner flex flex-col transform transition duration-1000 w-full format--centre opacity-0 translate-y-1/2"
-        :class="visible ? 'component-visible-y' : ''">
-
-        
-        <div x-ref="videoSlider" class="VideoCarousel-slides">
-
-                            <div x-data="videoCarouselSlide()" 
-                    class="VideoCarousel-slide w-3/4 md:w-6/12 xl:w-[46%]">
-
-                    <div class="VideoCarousel-slide-inner relative overflow-hidden border border-[#4D4D4D] rounded-[10px] transition duration-[600ms] 
-                        scale-90">
-
-                        <div class="relative flex items-center justify-center aspect-video overflow-hidden">
-                                                                                                <div x-ref="placeholder" class="absolute inset-0 -z-10 transition duration-300 opacity-70">
-
-                                        <img src="./images/Raju.png"  width="1920" height="1080" class="w-full h-full object-cover lazy" alt="Snoop"   data-sizes="(min-width: 1199px) 1024px, (min-width: 992px) 768px, (min-width: 767px) 300px, (min-width: 375px) 100vw"  />
-                                    </div>
-                                
-                                <iframe class="VideoCarousel__video w-full h-full overflow-hidden transition duration-300 absolute top-0 left-0"
-                                    src="#"
-                                    allowfullscreen
-                                    allowtransparency
-                                    allow="autoplay"
-                                    x-ref="video"
-                                    :class="playing ? 'opacity-100' : 'opacity-0'"
-                                ></iframe>
-
-                                <button type="button" 
-                                    class="VideoCarousel__play-btn w-full h-full absolute z-10 flex items-center justify-center transition duration-300"
-                                    x-ref="playBtn"
-                                    :class="playing ? 'opacity-0' : 'opacity-100'">
-
-                                    <svg class="w-12 h-12 border border-white bg-white/25 rounded-[50%]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                                        <circle fill="#FFF" fill-opacity=".25" cx="24" cy="24" r="24"/>
-                                        <circle fill="none" stroke="#FFF" stroke-width=".4286" stroke-opacity=".27" cx="24" cy="24" r="23.8"/>
-                                        <path fill="#FFF" d="M18.7 32.5c-.3 0-.6-.1-.8-.2-.6-.3-.9-1-.9-1.7V16.1c0-.7.4-1.4.9-1.7.3-.2.6-.2.9-.2.3 0 .6.1.9.3l12 7.4c.3.2.5.4.6.7.1.3.2.6.2.9s-.1.6-.2.9c-.1.3-.3.5-.6.7l-12 7.4c-.3-.1-.7 0-1 0z"/>
-                                    </svg>
-                                </button>
-                            
-                                                    </div>
-
-                                            </div>
-                </div>
-             
-                <div x-data="videoCarouselSlide()" 
-                    class="VideoCarousel-slide w-3/4 md:w-6/12 xl:w-[46%]">
-
-                    <div class="VideoCarousel-slide-inner relative overflow-hidden border border-[#4D4D4D] rounded-[10px] transition duration-[600ms] 
-                        scale-90">
-
-                        <div class="relative flex items-center justify-center aspect-video overflow-hidden">
-                                        <div x-ref="placeholder" class="absolute inset-0 -z-10 transition duration-300 opacity-70">
-                                        <img src="./images/Sweety pan.png" width="1828" height="852" class="w-full h-full object-cover lazy" alt="Jen-AI-e1696869518885" data-sizes="(min-width: 1199px) 1024px, (min-width: 992px) 768px, (min-width: 767px) 300px, (min-width: 375px) 100vw"  />
-                                    </div>
-                                
-                                <iframe class="VideoCarousel__video w-full h-full overflow-hidden transition duration-300 absolute top-0 left-0"
-                                    src="#"
-                                    allowfullscreen
-                                    allowtransparency
-                                    allow="autoplay"
-                                    x-ref="video"
-                                    :class="playing ? 'opacity-100' : 'opacity-0'"
-                                ></iframe>
-
-                                <button type="button" 
-                                    class="VideoCarousel__play-btn w-full h-full absolute z-10 flex items-center justify-center transition duration-300"
-                                    x-ref="playBtn"
-                                    :class="playing ? 'opacity-0' : 'opacity-100'">
-
-                                    <svg class="w-12 h-12 border border-white bg-white/25 rounded-[50%]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                                        <circle fill="#FFF" fill-opacity=".25" cx="24" cy="24" r="24"/>
-                                        <circle fill="none" stroke="#FFF" stroke-width=".4286" stroke-opacity=".27" cx="24" cy="24" r="23.8"/>
-                                        <path fill="#FFF" d="M18.7 32.5c-.3 0-.6-.1-.8-.2-.6-.3-.9-1-.9-1.7V16.1c0-.7.4-1.4.9-1.7.3-.2.6-.2.9-.2.3 0 .6.1.9.3l12 7.4c.3.2.5.4.6.7.1.3.2.6.2.9s-.1.6-.2.9c-.1.3-.3.5-.6.7l-12 7.4c-.3-.1-.7 0-1 0z"/>
-                                    </svg>
-                                </button>
-                            
-                                                    </div>
-
-                                            </div>
-                </div>
-                            <div x-data="videoCarouselSlide()" 
-                    class="VideoCarousel-slide w-3/4 md:w-6/12 xl:w-[46%]">
-
-                    <div class="VideoCarousel-slide-inner relative overflow-hidden border border-[#4D4D4D] rounded-[10px] transition duration-[600ms] 
-                        scale-90">
-
-                        <div class="relative flex items-center justify-center aspect-video overflow-hidden">
-                                                                                                <div x-ref="placeholder" class="absolute inset-0 -z-10 transition duration-300 opacity-70">
-
-                                        <img src="./images/Sweety.png"  width="1689" height="950" class="w-full h-full object-cover lazy" alt="Fall-e1696606724315" data-sizes="(min-width: 1199px) 1024px, (min-width: 992px) 768px, (min-width: 767px) 300px, (min-width: 375px) 100vw"  />
-                                    </div>
-                                
-                                <iframe class="VideoCarousel__video w-full h-full overflow-hidden transition duration-300 absolute top-0 left-0"
-                                    src="#"
-                                    allowfullscreen
-                                    allowtransparency
-                                    allow="autoplay"
-                                    x-ref="video"
-                                    :class="playing ? 'opacity-100' : 'opacity-0'"
-                                ></iframe>
-
-                                <button type="button" 
-                                    class="VideoCarousel__play-btn w-full h-full absolute z-10 flex items-center justify-center transition duration-300"
-                                    x-ref="playBtn"
-                                    :class="playing ? 'opacity-0' : 'opacity-100'">
-
-                                    <svg class="w-12 h-12 border border-white bg-white/25 rounded-[50%]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                                        <circle fill="#FFF" fill-opacity=".25" cx="24" cy="24" r="24"/>
-                                        <circle fill="none" stroke="#FFF" stroke-width=".4286" stroke-opacity=".27" cx="24" cy="24" r="23.8"/>
-                                        <path fill="#FFF" d="M18.7 32.5c-.3 0-.6-.1-.8-.2-.6-.3-.9-1-.9-1.7V16.1c0-.7.4-1.4.9-1.7.3-.2.6-.2.9-.2.3 0 .6.1.9.3l12 7.4c.3.2.5.4.6.7.1.3.2.6.2.9s-.1.6-.2.9c-.1.3-.3.5-.6.7l-12 7.4c-.3-.1-.7 0-1 0z"/>
-                                    </svg>
-                                </button>
-                            
-                                                    </div>
-
-                                            </div>
-                </div>
-            
+<!-- scroll -->
+<section>
+    <div class="scroll-container">
+        <div class="scroll-content">
+            <img src="./wp-content/uploads/2023/10/CNN-SM.png" alt="Placeholder 1">
+            <img src="./wp-content/uploads/2023/10/CRAFT-White-sm.png" alt="Placeholder 2">
+            <img src="./wp-content/uploads/2023/10/Lenovo-sm.png" alt="Placeholder 3">
+            <img src="./wp-content/uploads/2023/10/McCann-Worldgroup-sm.png" alt="Placeholder 4">
+            <img src="./wp-content/uploads/2023/10/Virgin.png" alt="Placeholder 5">
+            <img src="./wp-content/uploads/2023/08/Lionsgate-sm.png" alt="Placeholder 6">
+            <img src="./wp-content/uploads/2023/08/Netflix-sm.png" alt="Placeholder 7">
+            <!-- Repeat images as needed -->
         </div>
+    </div>
+  </section>
 
-        <div class="flex justify-center w-full mt-14">
-            <button type="button" class="w-10 h-10 rounded-full border border-greyscale-6/50 border-opacity-20 flex items-center justify-center mr-[5px]" @click="slider.previous(true)"><svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.15281 7.87832L9.91377 2.4515C10.3992 1.99425 10.3978 1.22217 9.9108 0.76664C9.46547 0.350098 8.77311 0.351319 8.32926 0.769429L1.07779 7.60031C0.27185 8.35951 0.271852 9.64073 1.07779 10.3999L8.32889 17.2305C8.77252 17.6484 9.46491 17.6484 9.90855 17.2305C10.391 16.776 10.3913 16.0091 9.9093 15.5542L4.15281 10.1219L2.95718 9.00012L4.15281 7.87832Z" fill="#F7F8F8"/>
-            </svg></button>
-            
-            <button type="button" class="w-10 h-10 rounded-full border border-greyscale-6/50 border-opacity-20 flex items-center justify-center ml-[5px]" @click="slider.next(true)"><svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6.24758 10.1217L0.486624 15.5485C0.00122261 16.0057 0.0025835 16.7778 0.489594 17.2334C0.934919 17.6499 1.62728 17.6487 2.07113 17.2306L9.3226 10.3997C10.1285 9.64049 10.1285 8.35927 9.3226 7.60007L2.0715 0.769545C1.62787 0.351639 0.935478 0.351641 0.491843 0.769545C0.00939369 1.22401 0.00905132 1.99086 0.491094 2.44576L6.24758 7.87809L7.44321 8.99988L6.24758 10.1217Z" fill="#F7F8F8"/>
-            </svg></button>
+
+ <!-- endscroll -->
+
+ 
+  
+ <section>
+    <div class="main">
+    <div class="scroll-container1">
+        <div class="scroll-content1">
+            <video src="./images/Marvel Tea TVC.mov" poster="./images/Marvel.png" controls></video>
+            <video src="./images/Raju Supari TVC.mov" poster="./images/Raju.png" controls></video>
+            <video src="./images/SpringFit Mattresses TVC.mov" poster="./images/Sleeper.png" controls></video>
+            <video src="./images/Sweety Crush.mp4" poster="./images/Sweety.png" controls></video>
+            <video src="./images/SWEETY SUPARI TVC 30 SEC.mp4" poster="./images/Sweety pan.png" controls></video>
+            <!-- Add more videos as needed -->
         </div>
-
-        
-        <span class="block absolute bg-gradient-to-r from-primary-charcoal to-transparent h-full w-1/6 md:w-1/4 top-0 left-0" aria-hidden="true"></span>
-
-        <span class="block absolute bg-gradient-to-l from-primary-charcoal to-transparent h-full w-1/6 md:w-1/4 top-0 right-0" aria-hidden="true"></span>
-
     </div>
-
-    <div class="VideoCarousel__Modals hidden">
-                    <div class="flex flex-col sm:flex-row relative ">
-                <div class="z-[999999] absolute inset-0 Modal Modal--centered">
-                    <div x-show="activeModal === 0"
-                        x-transition:enter="ease duration-300"
-                        x-transition:enter-start="opacity-0"
-                        x-transition:enter-end="opacity-100"
-                        x-transition:leave="ease duration-300"
-                        x-transition:leave-start="opacity-100"
-                        x-transition:leave-end="opacity-0"
-                        class="Modal__backdrop z-0 fixed inset-0 sm:blur-md bg-primary-charcoal/75 backdrop-blur-none transition-opacity"
-                        @click="activeModal = null;" aria-hidden="true"></div>
-
-                    <div x-show="activeModal === 0"
-                        x-transition:enter="ease-out duration-600 transition-all"
-                        x-transition:enter-start="opacity-0 translate-x-full"
-                        x-transition:enter-end="opacity-100 translate-x-0"
-                        x-transition:leave="ease-in duration-500 transition-none"
-                        x-transition:leave-start="opacity-100 translate-x-0"
-                        x-transition:leave-end="opacity-0 translate-x-full"
-                        class="Modal__dialog-wrapper z-10 fixed inset-0 left-auto w-full sm:w-11/12 lg:w-10/12 xl:w-8/12 sm:h-screen overflow-auto transform px-px flex">
-
-                        <span class="modal__border block absolute bg-gradient-to-b from-primary-charcoal via-white/10 to-primary-charcoal h-full w-px left-0" aria-hidden="true"></span>
-                        <span class="modal__border block absolute bg-gradient-to-b from-primary-charcoal via-white/10 to-primary-charcoal h-full w-px right-0" aria-hidden="true"></span>
-
-                        <div x-show="activeModal === 0"
-                            x-transition:enter="ease-out duration-500 delay-700 transition-all"
-                            x-transition:enter-start="opacity-0 translate-x-4 scale-95"
-                            x-transition:enter-end="opacity-100 translate-x-0 scale-100"
-                            x-transition:leave="ease-in transition-none"
-                            x-transition:leave-start="opacity-100 translate-x-0 scale-100"
-                            x-transition:leave-end="opacity-0 translate-x-4 scale-95"
-                            class="Modal__dialog relative w-full transform backdrop-blur-2xl my-auto">
-
-                            <div class="Modal__content relative w-full">
-                                <header class="Modal__header absolute top-0 z-10 w-full flex justify-end items-center container sm:max-w-none p-4 sm:p-8 pointer-events-none">
-                                    <button @click="activeModal = null;" class="Modal__close-btn pointer-events-auto" data-dismiss="modal" aria-label="Close"></button>
-                                </header>
-
-                                <div class="Modal__body w-full inset-0 overflow-x-hidden overflow-y-auto bg-primary-charcoal border border-white/10 rounded-2xl bg-gradient-to-b from-primary-gradient-blue-light-start/5 to-primary-gradient-blue-light-end/5">
-                                    
-                                                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    <div class="flex flex-col sm:flex-row relative ">
-                <div class="z-[999999] absolute inset-0 Modal Modal--centered">
-                    <div x-show="activeModal === 1"
-                        x-transition:enter="ease duration-300"
-                        x-transition:enter-start="opacity-0"
-                        x-transition:enter-end="opacity-100"
-                        x-transition:leave="ease duration-300"
-                        x-transition:leave-start="opacity-100"
-                        x-transition:leave-end="opacity-0"
-                        class="Modal__backdrop z-0 fixed inset-0 sm:blur-md bg-primary-charcoal/75 backdrop-blur-none transition-opacity"
-                        @click="activeModal = null;" aria-hidden="true"></div>
-
-                    <div x-show="activeModal === 1"
-                        x-transition:enter="ease-out duration-600 transition-all"
-                        x-transition:enter-start="opacity-0 translate-x-full"
-                        x-transition:enter-end="opacity-100 translate-x-0"
-                        x-transition:leave="ease-in duration-500 transition-none"
-                        x-transition:leave-start="opacity-100 translate-x-0"
-                        x-transition:leave-end="opacity-0 translate-x-full"
-                        class="Modal__dialog-wrapper z-10 fixed inset-0 left-auto w-full sm:w-11/12 lg:w-10/12 xl:w-8/12 sm:h-screen overflow-auto transform px-px flex">
-
-                        <span class="modal__border block absolute bg-gradient-to-b from-primary-charcoal via-white/10 to-primary-charcoal h-full w-px left-0" aria-hidden="true"></span>
-                        <span class="modal__border block absolute bg-gradient-to-b from-primary-charcoal via-white/10 to-primary-charcoal h-full w-px right-0" aria-hidden="true"></span>
-
-                        <div x-show="activeModal === 1"
-                            x-transition:enter="ease-out duration-500 delay-700 transition-all"
-                            x-transition:enter-start="opacity-0 translate-x-4 scale-95"
-                            x-transition:enter-end="opacity-100 translate-x-0 scale-100"
-                            x-transition:leave="ease-in transition-none"
-                            x-transition:leave-start="opacity-100 translate-x-0 scale-100"
-                            x-transition:leave-end="opacity-0 translate-x-4 scale-95"
-                            class="Modal__dialog relative w-full transform backdrop-blur-2xl my-auto">
-
-                            <div class="Modal__content relative w-full">
-                                <header class="Modal__header absolute top-0 z-10 w-full flex justify-end items-center container sm:max-w-none p-4 sm:p-8 pointer-events-none">
-                                    <button @click="activeModal = null;" class="Modal__close-btn pointer-events-auto" data-dismiss="modal" aria-label="Close"></button>
-                                </header>
-
-                                <div class="Modal__body w-full inset-0 overflow-x-hidden overflow-y-auto bg-primary-charcoal border border-white/10 rounded-2xl bg-gradient-to-b from-primary-gradient-blue-light-start/5 to-primary-gradient-blue-light-end/5">
-                                    
-                                                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    <div class="flex flex-col sm:flex-row relative ">
-                <div class="z-[999999] absolute inset-0 Modal Modal--centered">
-                    <div x-show="activeModal === 2"
-                        x-transition:enter="ease duration-300"
-                        x-transition:enter-start="opacity-0"
-                        x-transition:enter-end="opacity-100"
-                        x-transition:leave="ease duration-300"
-                        x-transition:leave-start="opacity-100"
-                        x-transition:leave-end="opacity-0"
-                        class="Modal__backdrop z-0 fixed inset-0 sm:blur-md bg-primary-charcoal/75 backdrop-blur-none transition-opacity"
-                        @click="activeModal = null;" aria-hidden="true"></div>
-
-                    <div x-show="activeModal === 2"
-                        x-transition:enter="ease-out duration-600 transition-all"
-                        x-transition:enter-start="opacity-0 translate-x-full"
-                        x-transition:enter-end="opacity-100 translate-x-0"
-                        x-transition:leave="ease-in duration-500 transition-none"
-                        x-transition:leave-start="opacity-100 translate-x-0"
-                        x-transition:leave-end="opacity-0 translate-x-full"
-                        class="Modal__dialog-wrapper z-10 fixed inset-0 left-auto w-full sm:w-11/12 lg:w-10/12 xl:w-8/12 sm:h-screen overflow-auto transform px-px flex">
-
-                        <span class="modal__border block absolute bg-gradient-to-b from-primary-charcoal via-white/10 to-primary-charcoal h-full w-px left-0" aria-hidden="true"></span>
-                        <span class="modal__border block absolute bg-gradient-to-b from-primary-charcoal via-white/10 to-primary-charcoal h-full w-px right-0" aria-hidden="true"></span>
-
-                        <div x-show="activeModal === 2"
-                            x-transition:enter="ease-out duration-500 delay-700 transition-all"
-                            x-transition:enter-start="opacity-0 translate-x-4 scale-95"
-                            x-transition:enter-end="opacity-100 translate-x-0 scale-100"
-                            x-transition:leave="ease-in transition-none"
-                            x-transition:leave-start="opacity-100 translate-x-0 scale-100"
-                            x-transition:leave-end="opacity-0 translate-x-4 scale-95"
-                            class="Modal__dialog relative w-full transform backdrop-blur-2xl my-auto">
-
-                            <div class="Modal__content relative w-full">
-                                <header class="Modal__header absolute top-0 z-10 w-full flex justify-end items-center container sm:max-w-none p-4 sm:p-8 pointer-events-none">
-                                    <button @click="activeModal = null;" class="Modal__close-btn pointer-events-auto" data-dismiss="modal" aria-label="Close"></button>
-                                </header>
-
-                                <div class="Modal__body w-full inset-0 overflow-x-hidden overflow-y-auto bg-primary-charcoal border border-white/10 rounded-2xl bg-gradient-to-b from-primary-gradient-blue-light-start/5 to-primary-gradient-blue-light-end/5">
-                                    
-                                                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-
-</div>
-                </div>
+    <div class="navigation">
+        <button class="nav-button" id="prev">&#9664;</button>
+        <button class="nav-button" id="next">&#9654;</button>
     </div>
-</section>
-<!--// Content Row -->
+    </div>
+  </section>
 
                                                     <!-- Content Row -->
 <section class="relative block md:block lg:block      text-content-light " >
@@ -1816,7 +1542,33 @@ var gdpr_consent__cookies = ""
 
 
     </body>
-
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const scrollContainer1 = document.querySelector('.scroll-container1');
+        const scrollContent1 = document.querySelector('.scroll-content1');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+    
+        let scrollAmount = 0;
+    
+        nextButton.addEventListener('click', () => {
+            scrollAmount += 320; // width of video + margin
+            if (scrollAmount > scrollContent1.scrollWidth - scrollContainer1.clientWidth) {
+                scrollAmount = scrollContent1.scrollWidth - scrollContainer1.clientWidth;
+            }
+            scrollContent1.style.transform = `translateX(-${scrollAmount}px)`;
+        });
+    
+        prevButton.addEventListener('click', () => {
+            scrollAmount -= 320; // width of video + margin
+            if (scrollAmount < 0) {
+                scrollAmount = 0;
+            }
+            scrollContent1.style.transform = `translateX(-${scrollAmount}px)`;
+        });
+    });
+    
+</script>
 <!-- Mirrored from www.flawlessai.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 07:32:35 GMT -->
 </html>
 
