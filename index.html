@@ -139,8 +139,9 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </style>
 
 <style>
-    .mains{
-        overflow: hidden; 
+
+    .mains {
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -173,7 +174,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     .video-wrapper1 video {
         width: 550px;
         height: 350px;
-        object-fit: cover; /* Ensure the video covers the entire area */
+        object-fit: cover;
     }
     
     .video-wrapper1::before {
@@ -183,7 +184,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+        background: rgba(0, 0, 0, 0.4);
         border-radius: 10px;
         transition: background 0.3s ease;
     }
@@ -224,6 +225,57 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     
     .nav-button:hover {
         background-color: #000;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 1200px) {
+        .video-wrapper1 video {
+            width: 450px;
+            height: 300px;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .video-wrapper1 video {
+            width: 350px;
+            height: 250px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .video-wrapper1 video {
+            width: 300px;
+            height: 200px;
+        }
+    
+        .nav-button {
+            font-size: 18px;
+            padding: 8px;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .video-wrapper1 video {
+            width: 250px;
+            height: 150px;
+        }
+    
+        .nav-button {
+            font-size: 16px;
+            padding: 6px;
+        }
+    }
+    
+    @media (max-width: 400px) {
+        .video-wrapper1 video {
+            width: 200px;
+            height: 120px;
+        }
+    
+        .nav-button {
+            font-size: 14px;
+            padding: 5px;
+        }
     }
     
 </style>
