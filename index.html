@@ -136,12 +136,98 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	    margin-right: -0.25em;
 	}
 
+</style>
 
-
-
+<style>
+    .mains{
+        overflow: hidden; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+    }
+    
+    .scroll-container1 {
+        display: flex;
+        align-items: center;
+        width: 80vw;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    .scroll-content1 {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .video-wrapper1 {
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .video-wrapper1 video {
+        width: 550px;
+        height: 350px;
+        object-fit: cover; /* Ensure the video covers the entire area */
+    }
+    
+    .video-wrapper1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+        border-radius: 10px;
+        transition: background 0.3s ease;
+    }
+    
+    .video-wrapper1::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        background: url('play-button.png') no-repeat center center;
+        background-size: contain;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        opacity: 1;
+    }
+    
+    .video-wrapper1:hover::before,
+    .video-wrapper1:hover::after {
+        background: rgba(0, 0, 0, 0.6);
+    }
+    
+    .navigation {
+        margin-top: 20px;
+    }
+    
+    .nav-button {
+        border: white solid 2px;
+        color: white;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    .nav-button:hover {
+        background-color: #000;
+    }
+    
 </style>
 <style>
- 
     .scroll-container {
         display: flex;
         align-items: center;
@@ -172,51 +258,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     }
     
 </style>
-<style>
-    .main {
-        overflow: hidden; /* Hide the scrollbars */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-    }
-    
-    .scroll-container1 {
-        display: flex;
-        align-items: center;
-        width: 80vw;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-    
-    .scroll-content1{
-        display: flex;
-        transition: transform 0.5s ease;
-    }
-    
-    .scroll-content1 video {
-        width: 300px;
-        height: 200px;
-        margin-right: 20px;
-        background-color: #000;
-    }
-    
-    .navigation {
-        margin-top: 20px;
-    }
-    
-    .nav-button {
-        border: none;
-        color: white;
-        padding: 10px;
-        margin: 5px;
-        border-radius: 50%;
-        border: solid #000 1px;
-        cursor: pointer;
-        font-size: 20px;
-    }
-</style>
+
 <link rel='stylesheet' id='xoo-el-fonts-css' href='wp-content/plugins/easy-login-woocommerce/assets/css/xoo-el-fonts6770.css?ver=2.6.5' type='text/css' media='all' />
 <link rel='stylesheet' id='IonIcons-css' href='../unpkg.com/ionicons%404.5.10-0/dist/css/ionicons.min.css?ver=2.9' type='text/css' media='all' />
 <link rel='stylesheet' id='Main-css' href='wp-content/themes/pegasus/dist/css/main98a9.css?ver=2.9' type='text/css' media='all' />
@@ -930,7 +972,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             <h2 class="heading-small"><span style="color: #d33834;">DeepEditor</span></h2>
 <p>&nbsp;</p>
 <p><strong>Make dialogue changes without going back to set</strong></p>
-<p>Flawless introduces a fundamental shift to how films can be made, with the ability to edit new lines of dialogue and performance using GenAI. Previously there were only physically filmed reshoots. DeepEditor creates new dialogue and avoids the time and material costs associated with going back to set.</p>
+<p>Bijan Ads & Films Private Ltd introduces a fundamental shift in film production with the ability to edit new lines of dialogue and performance using GenAI. Previously, reshoots required physically returning to the set. Now, DeepEditor creates new dialogue, eliminating the time and material costs associated with traditional reshoots.</p>
 <p>&nbsp;</p>
 
                                         </div>
@@ -987,8 +1029,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="overline-heading">
 <h1 class="heading-medium heading-extra-small">Fully scalable and secure by design</h1>
 </div>
-<p>Built on horizontally scalable cloud infrastructure and designed to integrate seamlessly into film production, localization and distribution workflows.</p>
-<p>Flawless is a member of the Trusted Partner Network and compliant with TPN security best practices.</p>
+<p>Built on a horizontally scalable cloud infrastructure and designed to integrate seamlessly into film production, localization, and distribution workflows, Bijan Ads & Films Private Ltd ensures optimal efficiency and adaptability.</p>
+<p>As a member of the Trusted Partner Network, Bijan Ads & Films Private Ltd is compliant with TPN security best practices, ensuring the highest standards of data security and protection.</p>
 
                     </div>
 
@@ -1017,26 +1059,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
  <!-- endscroll -->
 
- 
-  
- <section>
-    <div class="main">
-    <div class="scroll-container1">
-        <div class="scroll-content1">
-            <video src="./images/Marvel Tea TVC.mov" poster="./images/Marvel.png" controls></video>
-            <video src="./images/Raju Supari TVC.mov" poster="./images/Raju.png" controls></video>
-            <video src="./images/SpringFit Mattresses TVC.mov" poster="./images/Sleeper.png" controls></video>
-            <video src="./images/Sweety Crush.mp4" poster="./images/Sweety.png" controls></video>
-            <video src="./images/SWEETY SUPARI TVC 30 SEC.mp4" poster="./images/Sweety pan.png" controls></video>
-            <!-- Add more videos as needed -->
-        </div>
-    </div>
-    <div class="navigation">
-        <button class="nav-button" id="prev">&#9664;</button>
-        <button class="nav-button" id="next">&#9654;</button>
-    </div>
-    </div>
-  </section>
+
+  <!-- videoscroll -->
+        <section>
+            <div class ="mains">
+                <div class="scroll-container1">
+                    <div class="scroll-content1">
+                        <div class="video-wrapper1">
+                            <video src="./images/Blue Lines TMT TVC.mov"  poster="./images/Blueline.png" controls></video>
+                        </div>
+                        <div class="video-wrapper1">
+                            <video src="./images/Marvel Tea TVC.mov"  poster="./images/Marvel.png" controls></video>
+                        </div>
+                        <div class="video-wrapper1">
+                            <video src="./images/Raju Supari TVC.mov"  poster="./images/Raju.png" controls></video>
+                        </div>
+                        <div class="video-wrapper1">
+                            <video src="./images/SpringFit Mattresses TVC.mov" poster="./images/Sleeper.png" controls></video>
+                        </div>
+                        <div class="video-wrapper1">
+                            <video src="./images/Sweety Crush.mp4"  poster="./images/Sweety.png" controls></video>
+                        </div>
+                        <div class="video-wrapper1">
+                            <video src="./images/SWEETY SUPARI TVC 30 SEC.mp4"  poster="./images/Sweety pan.png" controls></video>
+                        </div>
+                        <!-- Add more videos as needed -->
+                    </div>
+                </div>
+                <div class="navigation">
+                    <button class="nav-button" id="prev">&#9664;</button>
+                    <button class="nav-button" id="next">&#9654;</button>
+                </div>
+              </div>
+              </section>
+            <!-- endvideoscroll -->
+            
 
                                                     <!-- Content Row -->
 <section class="relative block md:block lg:block      text-content-light " >
@@ -1542,33 +1599,32 @@ var gdpr_consent__cookies = ""
 
 
     </body>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const scrollContainer1 = document.querySelector('.scroll-container1');
-        const scrollContent1 = document.querySelector('.scroll-content1');
-        const prevButton = document.getElementById('prev');
-        const nextButton = document.getElementById('next');
-    
-        let scrollAmount = 0;
-    
-        nextButton.addEventListener('click', () => {
-            scrollAmount += 320; // width of video + margin
-            if (scrollAmount > scrollContent1.scrollWidth - scrollContainer1.clientWidth) {
-                scrollAmount = scrollContent1.scrollWidth - scrollContainer1.clientWidth;
-            }
-            scrollContent1.style.transform = `translateX(-${scrollAmount}px)`;
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollContainer1 = document.querySelector('.scroll-container1');
+            const scrollContent1 = document.querySelector('.scroll-content1');
+            const prevButton = document.getElementById('prev');
+            const nextButton = document.getElementById('next');
+        
+            let scrollAmount = 0;
+        
+            nextButton.addEventListener('click', () => {
+                scrollAmount += 320; // width of video + margin
+                if (scrollAmount > scrollContent1.scrollWidth - scrollContainer1.clientWidth) {
+                    scrollAmount = scrollContent1.scrollWidth - scrollContainer1.clientWidth;
+                }
+                scrollContent1.style.transform = `translateX(-${scrollAmount}px)`;
+            });
+        
+            prevButton.addEventListener('click', () => {
+                scrollAmount -= 320; // width of video + margin
+                if (scrollAmount < 0) {
+                    scrollAmount = 0;
+                }
+                scrollContent1.style.transform = `translateX(-${scrollAmount}px)`;
+            });
         });
-    
-        prevButton.addEventListener('click', () => {
-            scrollAmount -= 320; // width of video + margin
-            if (scrollAmount < 0) {
-                scrollAmount = 0;
-            }
-            scrollContent1.style.transform = `translateX(-${scrollAmount}px)`;
-        });
-    });
-    
-</script>
-<!-- Mirrored from www.flawlessai.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2024 07:32:35 GMT -->
+        
+    </script>
 </html>
 
