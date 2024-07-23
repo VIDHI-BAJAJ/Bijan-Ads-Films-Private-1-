@@ -197,7 +197,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         transform: translate(-50%, -50%);
         width: 60px;
         height: 60px;
-        background: url('./images/play.png') no-repeat center center;
         background-size: contain;
         pointer-events: none;
         transition: opacity 0.3s ease;
@@ -310,7 +309,61 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     }
     
 </style>
-
+<style>
+    .con{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff; 
+    }
+    
+    #preloader {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #fff; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+    
+    .logo-container {
+        perspective: 3000px;
+    }
+    
+    .logo {
+        width: 600px; 
+        animation: moveBackAndBlur 3s forwards;
+    }
+    
+    @keyframes moveBackAndBlur {
+        0% {
+            transform: translateZ(0);
+            filter: blur(0);
+        }
+        100% {
+            transform: translateZ(-700px);
+            filter: blur(10px);
+        }
+    }
+    @media (max-width: 768px) {
+        .logo {
+            width: 40vw; 
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .logo {
+            width: 50vw; 
+        }
+    }
+</style>
 <link rel='stylesheet' id='xoo-el-fonts-css' href='wp-content/plugins/easy-login-woocommerce/assets/css/xoo-el-fonts6770.css?ver=2.6.5' type='text/css' media='all' />
 <link rel='stylesheet' id='IonIcons-css' href='../unpkg.com/ionicons%404.5.10-0/dist/css/ionicons.min.css?ver=2.9' type='text/css' media='all' />
 <link rel='stylesheet' id='Main-css' href='wp-content/themes/pegasus/dist/css/main98a9.css?ver=2.9' type='text/css' media='all' />
@@ -439,7 +492,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</style>
     </head>
 
-    <body>
+    <body>     
+    <div id="preloader">
+        <div class="logo-container">
+            <img src="./images/Logo- Bijan.png" alt="Logo" class="logo">
+        </div>
+    </div>
+    <div id="content" style="display: none;">
+        <!-- Your website content goes here -->
+    </div>
+
         <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MHGTM4"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -500,7 +562,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </span>
                         </a>
                     </li>
-                                                                                                <li class="relative">
+                    <li class="relative">
                         <a href="#"
                            class="desktop-navigation-link text-primary-soft-white -underline py-2 block ease-in-out duration-300 opacity-50 hover:opacity-100">
                             <span class="flex flex-col items-center overflow-hidden h-6">
@@ -508,7 +570,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </span>
                         </a>
                     </li>
-                                                                                                <li class="relative">
+                     <li class="relative">
                         <a href="#"
                            class="desktop-navigation-link text-primary-soft-white -underline py-2 block ease-in-out duration-300 opacity-50 hover:opacity-100">
                             <span class="flex flex-col items-center overflow-hidden h-6">
@@ -516,7 +578,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </span>
                         </a>
                     </li>
-                                                                                                <li class="relative">
+                    <li class="relative">
                         <a href="#"
                            class="desktop-navigation-link text-primary-soft-white -underline py-2 block ease-in-out duration-300 opacity-50 hover:opacity-100">
                             <span class="flex flex-col items-center overflow-hidden h-6">
@@ -550,62 +612,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
         </div>
 
-     </div>
-
-                                                                
-    <div x-cloak x-show="mobMenuOpen"
-     x-transition:enter="transition ease-out duration-200"
-     x-transition:enter-start="opacity-0"
-     x-transition:enter-end="opacity-1"
-     x-transition:leave="transition ease-in duration-150"
-     x-transition:leave-start="opacity-1"
-     x-transition:leave-end="opacity-0"
-     class="Navigation__mobile-Menu fixed transform inset-0 md:hidden bg-primary-charcoal z-10">
-    <div class="relative pt-24 pb-8 w-full h-full">
-        <div class="w-full h-full container sm:px-5 overflow-auto flex flex-col">
-            
-                <div class="flex justify-end">
-                    <a href="#" class="button-primary" data-pegasus-modal="Modal--drawer" ><span class="sr-only">Contact</span><span class="mr-3">Get a quote</span><svg class="fill-current arrow" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3.54478 5.58329L0.549079 8.40524C0.296671 8.64301 0.297379 9.04449 0.550624 9.28137C0.782193 9.49797 1.14222 9.49733 1.37302 9.27992L5.14379 5.72786C5.56288 5.33308 5.56288 4.66684 5.14379 4.27206L1.37322 0.720183C1.14253 0.502872 0.782484 0.502873 0.551794 0.720183C0.30092 0.956506 0.300742 1.35527 0.551404 1.59182L3.54478 4.41663L4.1665 4.99996L3.54478 5.58329Z" fill="currentFill"/>
-            </svg></a>
-                </div>
-
-                        <ul class="pb-10 text-content-light">
-                                                            <li class="relative">
-                            <a href="#"
-                            class="mobile-navigation-link text-2xl group -underline block py-3 text-white ">
-                                <span>Filmmaking Tools</span>
-                            </a>
-                        </li>
-                                                                                                                        <li class="relative">
-                            <a href="#"
-                            class="mobile-navigation-link text-2xl group -underline block py-3 text-white ">
-                                <span>Research</span>
-                            </a>
-                        </li>
-                                                                                                                        <li class="relative">
-                            <a href="#"
-                            class="mobile-navigation-link text-2xl group -underline block py-3 text-white ">
-                                <span>People</span>
-                            </a>
-                        </li>
-                                                                                                                        <li class="relative">
-                            <a href="#"
-                            class="mobile-navigation-link text-2xl group -underline block py-3 text-white ">
-                                <span>Press</span>
-                            </a>
-                        </li>
-                                                                                                                        <li class="relative">
-                            <a href="#"
-                            class="mobile-navigation-link text-2xl group -underline block py-3 text-white ">
-                                <span>A.R.T.</span>
-                            </a>
-                        </li>
-                                                                                        </ul>
-        </div>    
+     </div>                                                                
+     <div x-show="mobMenuOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-1" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-1" x-transition:leave-end="opacity-0" class="Navigation__mobile-Menu fixed transform inset-0 md:hidden bg-primary-charcoal z-10">
+        <div class="relative pt-24 pb-8 w-full h-full">
+            <div class="w-full h-full container sm:px-5 overflow-auto flex flex-col">
+                
+                    <div class="flex justify-end">
+                        <a href="/contact/?modal=yes" class="button-primary" data-pegasus-modal="Modal--drawer" data-pegasus-modal-id="modal-0"><span class="sr-only">Contact</span><span class="mr-3">Get a quote</span>
+                            <svg class="fill-current arrow" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.54478 5.58329L0.549079 8.40524C0.296671 8.64301 0.297379 9.04449 0.550624 9.28137C0.782193 9.49797 1.14222 9.49733 1.37302 9.27992L5.14379 5.72786C5.56288 5.33308 5.56288 4.66684 5.14379 4.27206L1.37322 0.720183C1.14253 0.502872 0.782484 0.502873 0.551794 0.720183C0.30092 0.956506 0.300742 1.35527 0.551404 1.59182L3.54478 4.41663L4.1665 4.99996L3.54478 5.58329Z" fill="currentFill"></path>
+                </svg></a>
+                    </div>
+    
+                            <ul class="pb-10 text-content-light">
+                                                                <li class="relative">
+                                <a href="https://www.flawlessai.com/ai-tools" class="mobile-navigation-link text-2xl group -underline block py-3 text-white ">
+                                    <span>Filmmaking Tools</span>
+                                </a>
+                            </li>
+                                                                                                                            <li class="relative">
+                                <a href="https://www.flawlessai.com/research" class="mobile-navigation-link text-2xl group -underline block py-3 text-white ">
+                                    <span>Research</span>
+                                </a>
+                            </li>
+                                                                                                                            <li class="relative">
+                                <a href="https://www.flawlessai.com/people" class="mobile-navigation-link text-2xl group -underline block py-3 text-white ">
+                                    <span>People</span>
+                                </a>
+                            </li>
+                                                                                                                            <li class="relative">
+                                <a href="https://www.flawlessai.com/press" class="mobile-navigation-link text-2xl group -underline block py-3 text-white ">
+                                    <span>Press</span>
+                                </a>
+                            </li>
+                                                                                                                            <li class="relative">
+                                <a href="https://www.flawlessai.com/a-r-t" class="mobile-navigation-link text-2xl group -underline block py-3 text-white ">
+                                    <span>A.R.T.</span>
+                                </a>
+                            </li>
+                                                                                            </ul>
+            </div>    
+        </div>
+    
     </div>
-
-</div>
 
 
 </div>
@@ -722,13 +771,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </button>
 
-                    <iframe class="aspect-video absolute top-0 left-0 bg-black"
-                            src="https://player.vimeo.com/video/871886523"
+                    <video class="aspect-video absolute top-0 left-0 bg-black"
+                            src="./images/Blue Lines TMT TVC.mov"
                             allowfullscreen
                             allowtransparency
                             allow="autoplay"
                             x-ref="video"
-                            :class="videoPlaying ? 'block z-10 w-full h-full' : 'hidden -z-10 w-0 h-0'"></iframe>
+                            :class="videoPlaying ? 'block z-10 w-full h-full' : 'hidden -z-10 w-0 h-0'">
+                            </video>
                 </div>
             
             <div class="absolute inset-0 z-10 flex flex-col items-center justify-between py-4">
@@ -1675,6 +1725,18 @@ var gdpr_consent__cookies = ""
                 }
                 scrollContent1.style.transform = `translateX(-${scrollAmount}px)`;
             });
+        });
+        
+    </script>
+    <script>
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            const content = document.getElementById('content');
+            
+            setTimeout(() => {
+                preloader.style.display = 'none';
+                content.style.display = 'block';
+            }, 5000); 
         });
         
     </script>
